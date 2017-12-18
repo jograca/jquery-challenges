@@ -64,7 +64,6 @@
       if (randomNum == 1) {
         teamOneGoals.html(parseInt(teamOneGoals.html()) +1);
       }
-      
     })
 
     teamTwoShoot.click(function() {
@@ -83,7 +82,6 @@
       teamOneGoals.html(0);
       teamTwoGoals.html(0);
     })
-
   })
 
 })();
