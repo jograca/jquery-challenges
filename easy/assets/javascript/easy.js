@@ -41,6 +41,6 @@
 
   loadButton.click(function() {
     setText(localStorage.getItem('myStorage'));
-
   })
+  
 })();
