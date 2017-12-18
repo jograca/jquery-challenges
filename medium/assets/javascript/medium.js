@@ -42,7 +42,47 @@
   //code in here wont run until page loads
   $(function(){
 
+    const teamOneShoot = $("#teamone-shoot")
+    const teamTwoShoot = $("#teamtwo-shoot")
+    const teamOneNumShots = $("#teamone-numshots")
+    const teamTwoNumShots = $("#teamtwo-numshots")
+    const teamOneGoals= $('#teamone-numhits')
+    const teamTwoGoals= $('#teamtwo-numhits')
+    const resetButton = $("#reset")
+    const numResets = $("#num-resets")
 
+     function getRandomIntInclusive(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    teamOneShoot.click(function() {
+      teamOneNumShots.html(parseInt(teamOneNumShots.html()) +1);
+      var randomNum = getRandomIntInclusive(1, 5); 
+      console.log(randomNum);
+      if (randomNum == 1) {
+        teamOneGoals.html(parseInt(teamOneGoals.html()) +1);
+      }
+      
+    })
+
+    teamTwoShoot.click(function() {
+      teamTwoNumShots.html(parseInt(teamTwoNumShots.html()) +1);
+      var randomNum = getRandomIntInclusive(1, 5); 
+      console.log(randomNum);
+      if (randomNum == 1) {
+        teamTwoGoals.html(parseInt(teamTwoGoals.html()) +1);
+      }
+    })
+
+    resetButton.click(function() {
+      numResets.html(parseInt(numResets.html()) +1);
+      teamOneNumShots.html(0);
+      teamTwoNumShots.html(0);
+      teamOneGoals.html(0);
+      teamTwoGoals.html(0);
+    })
 
   })
 

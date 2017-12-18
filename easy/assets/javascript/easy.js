@@ -23,6 +23,7 @@
    * @return {String}
    */
   function getText() {
+    
     return $('#save-me').val();
   }
 
