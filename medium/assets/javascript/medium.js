@@ -58,20 +58,24 @@
     }
 
     teamOneShoot.click(function() {
+      $("body").css("background-color", "white");
       teamOneNumShots.html(parseInt(teamOneNumShots.html()) +1);
       var randomNum = getRandomIntInclusive(1, 5); 
-      console.log(randomNum);
+
       if (randomNum == 1) {
         teamOneGoals.html(parseInt(teamOneGoals.html()) +1);
+        $("body").css("background-color", "#7e6ff3");
       }
     })
 
     teamTwoShoot.click(function() {
+      $("body").css("background-color", "white");
       teamTwoNumShots.html(parseInt(teamTwoNumShots.html()) +1);
       var randomNum = getRandomIntInclusive(1, 5); 
-      console.log(randomNum);
+
       if (randomNum == 1) {
         teamTwoGoals.html(parseInt(teamTwoGoals.html()) +1);
+        $("body").css("background-color", "#ffa07a");
       }
     })
 
