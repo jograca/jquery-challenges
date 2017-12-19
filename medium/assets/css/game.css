@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 body {
-	font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS";
+    background-image: url("../images/grass.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 button {
 	background-color: black;
