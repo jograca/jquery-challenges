@@ -3,7 +3,6 @@
 body {
 	font-family: "Comic Sans MS";
 }
-
 button {
 	background-color: black;
 	border: none;
@@ -12,26 +11,21 @@ button {
 	text-decoration: none;
 	font-size: 16px;
 }
-
 #sportsball {
     margin: 0 auto;
     text-align:center;
 }
-
 #logo {
     height: 200px;
 }
-
 #main {
     width: 500px;
     margin: 0 auto;
 }
-
 #firstHeader {
     margin-bottom:5px;
     text-align: center;
 }
-
 #secondHeader {
     margin-top: 0;
     text-align: center; 
