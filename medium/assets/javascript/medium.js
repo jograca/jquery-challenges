@@ -36,52 +36,52 @@
  *   and how to use it in JS. You will also need to download a sound bite
  */
 
-(function(){
+(function () {
 
   //jQuery equivelent to window.onload = function{}
   //code in here wont run until page loads
-  $(function(){
+  $(function () {
 
     const teamOneShoot = $("#teamone-shoot")
     const teamTwoShoot = $("#teamtwo-shoot")
     const teamOneNumShots = $("#teamone-numshots")
     const teamTwoNumShots = $("#teamtwo-numshots")
-    const teamOneGoals= $('#teamone-numhits')
-    const teamTwoGoals= $('#teamtwo-numhits')
+    const teamOneGoals = $('#teamone-numhits')
+    const teamTwoGoals = $('#teamtwo-numhits')
     const resetButton = $("#reset")
     const numResets = $("#num-resets")
-
-     function getRandomIntInclusive(min, max) {
+ß
+    function getRandomIntInclusive(min, max) {
       min = Math.ceil(min);
       max = Math.floor(max);
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    teamOneShoot.click(function() {
+    teamOneShoot.click(function () {
       $("body").css("background-color", "white");
-      teamOneNumShots.html(parseInt(teamOneNumShots.html()) +1);
-      var randomNum = getRandomIntInclusive(1, 5); 
+      teamOneNumShots.html(parseInt(teamOneNumShots.html()) + 1);
+      var randomNum = getRandomIntInclusive(1, 5);
 
       if (randomNum == 1) {
-        teamOneGoals.html(parseInt(teamOneGoals.html()) +1);
+        teamOneGoals.html(parseInt(teamOneGoals.html()) + 1);
         $("body").css("background-color", "#7e6ff3");
       }
     })
 
-    teamTwoShoot.click(function() {
+    teamTwoShoot.click(function () {
       $("body").css("background-color", "white");
-      teamTwoNumShots.html(parseInt(teamTwoNumShots.html()) +1);
-      var randomNum = getRandomIntInclusive(1, 5); 
+      teamTwoNumShots.html(parseInt(teamTwoNumShots.html()) + 1);
+      var randomNum = getRandomIntInclusive(1, 5);
 
       if (randomNum == 1) {
-        teamTwoGoals.html(parseInt(teamTwoGoals.html()) +1);
+        teamTwoGoals.html(parseInt(teamTwoGoals.html()) + 1);
         $("body").css("background-color", "#ffa07a");
       }
     })
 
-    resetButton.click(function() {
+    resetButton.click(function () {
       $("body").css("background-color", "white");
-      numResets.html(parseInt(numResets.html()) +1);
+      numResets.html(parseInt(numResets.html()) + 1);
       teamOneNumShots.html(0);
       teamTwoNumShots.html(0);
       teamOneGoals.html(0);
