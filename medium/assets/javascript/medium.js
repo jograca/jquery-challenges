@@ -80,6 +80,7 @@
     })
 
     resetButton.click(function() {
+      $("body").css("background-color", "white");
       numResets.html(parseInt(numResets.html()) +1);
       teamOneNumShots.html(0);
       teamTwoNumShots.html(0);
